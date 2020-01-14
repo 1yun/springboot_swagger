@@ -43,6 +43,8 @@ public class StudentController {
             if(s.getChildren().isEmpty()){
                 continue;
             }
+
+            
             loopStudent(s.getChildren());
         }
         return students;
