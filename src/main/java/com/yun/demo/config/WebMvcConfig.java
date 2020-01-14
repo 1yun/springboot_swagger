@@ -1,4 +1,4 @@
-package com.yun.springboot_swagger_demo.config;
+package com.yun.demo.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;

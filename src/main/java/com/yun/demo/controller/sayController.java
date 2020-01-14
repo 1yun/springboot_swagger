@@ -1,11 +1,10 @@
-package com.yun.springboot_swagger_demo.controller;
+package com.yun.demo.controller;
 
 
-import com.yun.springboot_swagger_demo.bean.User;
+import com.yun.demo.bean.User;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;

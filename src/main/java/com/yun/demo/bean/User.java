@@ -1,4 +1,4 @@
-package com.yun.springboot_swagger_demo.bean;
+package com.yun.demo.bean;
 
 public class User {
 
