@@ -17,7 +17,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 @EnableWebMvc
 //扫描controller下的文件
-@ComponentScan(basePackages = {"com.yun.springboot_swagger_demo.controller"})
+@ComponentScan(basePackages = {"com.yun.demo.controller"})
 public class Swagger {
     /*
     * 创建api应用

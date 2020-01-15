@@ -4,6 +4,9 @@ package com.yun.demo.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.yun.demo.Service.StudentService;
 import com.yun.demo.bean.Student;
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -13,14 +16,21 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
 @RestController
 @RequestMapping("/student")
 public class StudentController {
+
+    private static final Logger LOG = LoggerFactory.getLogger(StudentController.class);
+
     @Resource
     private StudentService studentService;
 
     @GetMapping("/findStudentList")
     public Map<String,Object> findStudentList(){
+        if (LOG.isInfoEnabled()) {
+            LOG.info("user log user findStudentList.");
+        }
         Map<String,Object> map=new HashMap<>();
         QueryWrapper<Student> queryWrapper=new QueryWrapper<>();
         queryWrapper.isNull("Introduce_id");

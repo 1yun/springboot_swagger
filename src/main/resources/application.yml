@@ -6,17 +6,29 @@ spring:
   #1.应用配置
   application:
     name: swagger #指定服务名
+  profiles:
+    active: dev
   #2.数据库连接池
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
-    password: root
+    password: a123456
 
+
+# mybatis-plus
 mybatis-plus:
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
-  mapper-locations: classpath:Mapper/**/*.xml
+  extra:
+    dialect: mysql
+
+
+logging:
+  file: "logs/wsc-admin-api.log"
+  pattern:
+    console: "[%d{yyyy-MM-dd HH:mm:ss.SSS}] %-5level [%t] [%logger - %line]: %m%n"
+    file: "[%d{yyyy-MM-dd HH:mm:ss.SSS}] %-5level [%t] [%logger - %line]: %m%n"
+  level:
+    root: INFO
 #  #3.JPA
 #  jpa:
 #    database: MySQL

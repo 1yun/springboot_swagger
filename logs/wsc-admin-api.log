@@ -1,0 +1,376 @@
+[2020-01-15 14:40:27.468] INFO  [main] [com.yun.demo.DemoApplication - 50]: Starting DemoApplication on DESKTOP-H1ACH2O with PID 13564 (D:\workplace\idea_workplace\springboot_swagger\target\classes started by Lenovo in D:\workplace\idea_workplace\springboot_swagger)
+[2020-01-15 14:40:27.470] INFO  [main] [com.yun.demo.DemoApplication - 647]: No active profile set, falling back to default profiles: default
+[2020-01-15 14:40:28.235] INFO  [main] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - 330]: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5da3e674] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-01-15 14:40:28.288] INFO  [main] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - 330]: Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$dd2433a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-01-15 14:40:28.452] INFO  [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 90]: Tomcat initialized with port(s): 9002 (http)
+[2020-01-15 14:40:28.472] INFO  [main] [org.apache.catalina.core.StandardService - 173]: Starting service [Tomcat]
+[2020-01-15 14:40:28.473] INFO  [main] [org.apache.catalina.core.StandardEngine - 173]: Starting Servlet engine: [Apache Tomcat/9.0.22]
+[2020-01-15 14:40:28.575] INFO  [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - 173]: Initializing Spring embedded WebApplicationContext
+[2020-01-15 14:40:28.575] INFO  [main] [org.springframework.web.context.ContextLoader - 284]: Root WebApplicationContext: initialization completed in 1078 ms
+[2020-01-15 14:40:28.692] INFO  [main] [com.zaxxer.hikari.HikariDataSource - 110]: HikariPool-1 - Starting...
+[2020-01-15 14:40:28.705] WARN  [main] [com.zaxxer.hikari.util.DriverDataSource - 68]: Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+[2020-01-15 14:40:29.891] INFO  [main] [com.zaxxer.hikari.HikariDataSource - 123]: HikariPool-1 - Start completed.
+[2020-01-15 14:40:30.501] INFO  [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - 80]: Context refreshed
+[2020-01-15 14:40:30.511] INFO  [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - 83]: Found {0} custom documentation plugin(s)
+[2020-01-15 14:40:30.516] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 53]: Scanning for api listing references
+[2020-01-15 14:40:30.518] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:40:30.520] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 72]: Request mapping: error belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0, controller=org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController}]] 
+[2020-01-15 14:40:30.520] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:40:30.521] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 72]: Request mapping: errorHtml belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0, controller=org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController}]] 
+[2020-01-15 14:40:30.521] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method findStudentList was student-controller
+[2020-01-15 14:40:30.521] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 72]: Request mapping: findStudentList belongs to groups: [[ResourceGroup{groupName='student-controller', position=0, controller=com.yun.demo.controller.StudentController}]] 
+[2020-01-15 14:40:30.522] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method getUserById was 用户模块
+[2020-01-15 14:40:30.523] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 72]: Request mapping: getUserById belongs to groups: [[ResourceGroup{groupName='用户模块', position=0, controller=com.yun.demo.controller.sayController}]] 
+[2020-01-15 14:40:30.523] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method add was 用户模块
+[2020-01-15 14:40:30.523] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 72]: Request mapping: add belongs to groups: [[ResourceGroup{groupName='用户模块', position=0, controller=com.yun.demo.controller.sayController}]] 
+[2020-01-15 14:40:30.523] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method users was 用户模块
+[2020-01-15 14:40:30.523] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 72]: Request mapping: users belongs to groups: [[ResourceGroup{groupName='用户模块', position=0, controller=com.yun.demo.controller.sayController}]] 
+[2020-01-15 14:40:30.525] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 84]: Created resource listing Path: /default/用户模块 Description: 用户模块 Position: 0
+[2020-01-15 14:40:30.526] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 84]: Created resource listing Path: /default/student-controller Description: student-controller Position: 0
+[2020-01-15 14:40:30.526] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 84]: Created resource listing Path: /default/basic-error-controller Description: basic-error-controller Position: 0
+[2020-01-15 14:40:30.538] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+[2020-01-15 14:40:30.538] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache models with key java.util.Map<java.lang.String,java.lang.Object>(true)
+[2020-01-15 14:40:30.542] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+[2020-01-15 14:40:30.542] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache modelDependencies with key java.util.Map<java.lang.String,java.lang.Object>(true)
+[2020-01-15 14:40:30.545] INFO  [main] [springfox.documentation.spring.web.OperationsKeyGenerator - 51]: Cache key generated: /error.org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:40:30.545] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache operations with key /error.org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:40:30.551] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:40:30.552] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:40:30.554] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:40:30.555] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:40:30.556] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:40:30.556] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:40:30.557] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:40:30.558] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:40:30.558] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:40:30.559] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:40:30.559] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:40:30.560] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:40:30.561] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:40:30.561] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:40:30.562] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:40:30.563] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:40:30.565] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 14:40:30.565] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache models with key org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 14:40:30.566] INFO  [main] [springfox.documentation.schema.property.ModelPropertiesKeyGenerator - 48]: Cache key generated: org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 14:40:30.566] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 14:40:30.589] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 14:40:30.589] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache modelDependencies with key org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 14:40:30.589] INFO  [main] [springfox.documentation.schema.property.ModelPropertiesKeyGenerator - 48]: Cache key generated: org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 14:40:30.590] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 14:40:30.590] INFO  [main] [springfox.documentation.schema.property.ModelPropertiesKeyGenerator - 48]: Cache key generated: org.springframework.web.servlet.View(true)
+[2020-01-15 14:40:30.590] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+[2020-01-15 14:40:30.591] INFO  [main] [springfox.documentation.schema.property.ModelPropertiesKeyGenerator - 48]: Cache key generated: org.springframework.web.servlet.View(true)
+[2020-01-15 14:40:30.591] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+[2020-01-15 14:40:30.592] INFO  [main] [springfox.documentation.spring.web.OperationsKeyGenerator - 51]: Cache key generated: /error.org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:40:30.592] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache operations with key /error.org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:40:30.593] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:40:30.593] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:40:30.594] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:40:30.594] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:40:30.594] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:40:30.595] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:40:30.595] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:40:30.596] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:40:30.596] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:40:30.597] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:40:30.597] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:40:30.597] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:40:30.598] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:40:30.598] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:40:30.599] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:40:30.599] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:40:30.607] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.lang.Object(true)
+[2020-01-15 14:40:30.607] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache models with key java.lang.Object(true)
+[2020-01-15 14:40:30.607] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.lang.Object(true)
+[2020-01-15 14:40:30.607] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache modelDependencies with key java.lang.Object(true)
+[2020-01-15 14:40:30.607] INFO  [main] [springfox.documentation.spring.web.OperationsKeyGenerator - 51]: Cache key generated: /student/findStudentList.com.yun.demo.controller.StudentController.findStudentList.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:40:30.608] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache operations with key /student/findStudentList.com.yun.demo.controller.StudentController.findStudentList.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:40:30.608] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method findStudentList was student-controller
+[2020-01-15 14:40:30.608] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method findStudentList was student-controller
+[2020-01-15 14:40:30.610] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.lang.Object(true)
+[2020-01-15 14:40:30.610] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache models with key java.lang.Object(true)
+[2020-01-15 14:40:30.610] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.lang.Object(true)
+[2020-01-15 14:40:30.610] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache modelDependencies with key java.lang.Object(true)
+[2020-01-15 14:40:30.610] INFO  [main] [springfox.documentation.spring.web.OperationsKeyGenerator - 51]: Cache key generated: /user.com.yun.demo.controller.sayController.add.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:40:30.610] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache operations with key /user.com.yun.demo.controller.sayController.add.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:40:30.613] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method add was 用户模块
+[2020-01-15 14:40:30.614] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method add was 用户模块
+[2020-01-15 14:40:30.616] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: com.yun.demo.bean.User(true)
+[2020-01-15 14:40:30.616] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache models with key com.yun.demo.bean.User(true)
+[2020-01-15 14:40:30.616] INFO  [main] [springfox.documentation.schema.property.ModelPropertiesKeyGenerator - 48]: Cache key generated: com.yun.demo.bean.User(true)
+[2020-01-15 14:40:30.616] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache modelProperties with key com.yun.demo.bean.User(true)
+[2020-01-15 14:40:30.617] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: com.yun.demo.bean.User(true)
+[2020-01-15 14:40:30.617] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache modelDependencies with key com.yun.demo.bean.User(true)
+[2020-01-15 14:40:30.617] INFO  [main] [springfox.documentation.schema.property.ModelPropertiesKeyGenerator - 48]: Cache key generated: com.yun.demo.bean.User(true)
+[2020-01-15 14:40:30.617] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache modelProperties with key com.yun.demo.bean.User(true)
+[2020-01-15 14:40:30.617] INFO  [main] [springfox.documentation.spring.web.OperationsKeyGenerator - 51]: Cache key generated: /user/{id}.com.yun.demo.controller.sayController.getUserById.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:40:30.617] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache operations with key /user/{id}.com.yun.demo.controller.sayController.getUserById.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:40:30.619] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method getUserById was 用户模块
+[2020-01-15 14:40:30.619] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method getUserById was 用户模块
+[2020-01-15 14:40:30.620] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.lang.Object(true)
+[2020-01-15 14:40:30.620] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache models with key java.lang.Object(true)
+[2020-01-15 14:40:30.620] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.lang.Object(true)
+[2020-01-15 14:40:30.620] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache modelDependencies with key java.lang.Object(true)
+[2020-01-15 14:40:30.620] INFO  [main] [springfox.documentation.spring.web.OperationsKeyGenerator - 51]: Cache key generated: /users.com.yun.demo.controller.sayController.users.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:40:30.620] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache operations with key /users.com.yun.demo.controller.sayController.users.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:40:30.622] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method users was 用户模块
+[2020-01-15 14:40:30.622] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method users was 用户模块
+[2020-01-15 14:40:30.644] INFO  [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 202]: Tomcat started on port(s): 9002 (http) with context path ''
+[2020-01-15 14:40:30.646] INFO  [main] [com.yun.demo.DemoApplication - 59]: Started DemoApplication in 3.472 seconds (JVM running for 4.656)
+[2020-01-15 14:40:43.440] INFO  [http-nio-9002-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - 173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-01-15 14:40:43.440] INFO  [http-nio-9002-exec-1] [org.springframework.web.servlet.DispatcherServlet - 524]: Initializing Servlet 'dispatcherServlet'
+[2020-01-15 14:40:43.445] INFO  [http-nio-9002-exec-1] [org.springframework.web.servlet.DispatcherServlet - 546]: Completed initialization in 5 ms
+[2020-01-15 14:40:43.456] INFO  [http-nio-9002-exec-1] [com.yun.demo.controller.StudentController - 30]: user log user findStudentList.
+[2020-01-15 14:44:13.990] INFO  [main] [com.yun.demo.DemoApplication - 50]: Starting DemoApplication on DESKTOP-H1ACH2O with PID 9864 (D:\workplace\idea_workplace\springboot_swagger\target\classes started by Lenovo in D:\workplace\idea_workplace\springboot_swagger)
+[2020-01-15 14:44:13.992] INFO  [main] [com.yun.demo.DemoApplication - 647]: No active profile set, falling back to default profiles: default
+[2020-01-15 14:44:14.906] INFO  [main] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - 330]: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3c03540d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-01-15 14:44:14.964] INFO  [main] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - 330]: Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$bb83a13f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-01-15 14:44:15.139] INFO  [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 90]: Tomcat initialized with port(s): 9002 (http)
+[2020-01-15 14:44:15.154] INFO  [main] [org.apache.catalina.core.StandardService - 173]: Starting service [Tomcat]
+[2020-01-15 14:44:15.154] INFO  [main] [org.apache.catalina.core.StandardEngine - 173]: Starting Servlet engine: [Apache Tomcat/9.0.22]
+[2020-01-15 14:44:15.262] INFO  [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - 173]: Initializing Spring embedded WebApplicationContext
+[2020-01-15 14:44:15.262] INFO  [main] [org.springframework.web.context.ContextLoader - 284]: Root WebApplicationContext: initialization completed in 1239 ms
+[2020-01-15 14:44:15.368] INFO  [main] [com.zaxxer.hikari.HikariDataSource - 110]: HikariPool-1 - Starting...
+[2020-01-15 14:44:15.369] WARN  [main] [com.zaxxer.hikari.util.DriverDataSource - 68]: Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+[2020-01-15 14:44:16.197] INFO  [main] [com.zaxxer.hikari.HikariDataSource - 123]: HikariPool-1 - Start completed.
+[2020-01-15 14:44:16.827] INFO  [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - 80]: Context refreshed
+[2020-01-15 14:44:16.845] INFO  [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - 83]: Found {0} custom documentation plugin(s)
+[2020-01-15 14:44:16.852] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 53]: Scanning for api listing references
+[2020-01-15 14:44:16.855] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:44:16.856] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 72]: Request mapping: error belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0, controller=org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController}]] 
+[2020-01-15 14:44:16.857] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:44:16.857] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 72]: Request mapping: errorHtml belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0, controller=org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController}]] 
+[2020-01-15 14:44:16.857] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method findStudentList was student-controller
+[2020-01-15 14:44:16.857] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 72]: Request mapping: findStudentList belongs to groups: [[ResourceGroup{groupName='student-controller', position=0, controller=com.yun.demo.controller.StudentController}]] 
+[2020-01-15 14:44:16.858] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method getUserById was 用户模块
+[2020-01-15 14:44:16.858] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 72]: Request mapping: getUserById belongs to groups: [[ResourceGroup{groupName='用户模块', position=0, controller=com.yun.demo.controller.sayController}]] 
+[2020-01-15 14:44:16.859] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method add was 用户模块
+[2020-01-15 14:44:16.859] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 72]: Request mapping: add belongs to groups: [[ResourceGroup{groupName='用户模块', position=0, controller=com.yun.demo.controller.sayController}]] 
+[2020-01-15 14:44:16.859] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method users was 用户模块
+[2020-01-15 14:44:16.859] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 72]: Request mapping: users belongs to groups: [[ResourceGroup{groupName='用户模块', position=0, controller=com.yun.demo.controller.sayController}]] 
+[2020-01-15 14:44:16.861] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 84]: Created resource listing Path: /default/basic-error-controller Description: basic-error-controller Position: 0
+[2020-01-15 14:44:16.862] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 84]: Created resource listing Path: /default/用户模块 Description: 用户模块 Position: 0
+[2020-01-15 14:44:16.863] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 84]: Created resource listing Path: /default/student-controller Description: student-controller Position: 0
+[2020-01-15 14:44:16.876] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+[2020-01-15 14:44:16.876] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache models with key java.util.Map<java.lang.String,java.lang.Object>(true)
+[2020-01-15 14:44:16.882] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+[2020-01-15 14:44:16.882] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache modelDependencies with key java.util.Map<java.lang.String,java.lang.Object>(true)
+[2020-01-15 14:44:16.886] INFO  [main] [springfox.documentation.spring.web.OperationsKeyGenerator - 51]: Cache key generated: /error.org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:44:16.886] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache operations with key /error.org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:44:16.893] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:44:16.894] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:44:16.897] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:44:16.898] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:44:16.898] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:44:16.899] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:44:16.900] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:44:16.901] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:44:16.902] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:44:16.903] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:44:16.903] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:44:16.904] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:44:16.904] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:44:16.905] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:44:16.905] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:44:16.906] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 14:44:16.908] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 14:44:16.909] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache models with key org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 14:44:16.909] INFO  [main] [springfox.documentation.schema.property.ModelPropertiesKeyGenerator - 48]: Cache key generated: org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 14:44:16.909] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 14:44:16.933] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 14:44:16.933] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache modelDependencies with key org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 14:44:16.933] INFO  [main] [springfox.documentation.schema.property.ModelPropertiesKeyGenerator - 48]: Cache key generated: org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 14:44:16.934] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 14:44:16.934] INFO  [main] [springfox.documentation.schema.property.ModelPropertiesKeyGenerator - 48]: Cache key generated: org.springframework.web.servlet.View(true)
+[2020-01-15 14:44:16.934] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+[2020-01-15 14:44:16.935] INFO  [main] [springfox.documentation.schema.property.ModelPropertiesKeyGenerator - 48]: Cache key generated: org.springframework.web.servlet.View(true)
+[2020-01-15 14:44:16.935] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+[2020-01-15 14:44:16.936] INFO  [main] [springfox.documentation.spring.web.OperationsKeyGenerator - 51]: Cache key generated: /error.org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:44:16.936] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache operations with key /error.org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:44:16.937] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:44:16.937] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:44:16.938] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:44:16.938] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:44:16.939] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:44:16.939] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:44:16.939] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:44:16.940] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:44:16.940] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:44:16.941] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:44:16.941] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:44:16.942] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:44:16.942] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:44:16.943] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:44:16.943] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:44:16.943] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 14:44:16.952] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.lang.Object(true)
+[2020-01-15 14:44:16.952] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache models with key java.lang.Object(true)
+[2020-01-15 14:44:16.952] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.lang.Object(true)
+[2020-01-15 14:44:16.952] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache modelDependencies with key java.lang.Object(true)
+[2020-01-15 14:44:16.952] INFO  [main] [springfox.documentation.spring.web.OperationsKeyGenerator - 51]: Cache key generated: /student/findStudentList.com.yun.demo.controller.StudentController.findStudentList.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:44:16.953] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache operations with key /student/findStudentList.com.yun.demo.controller.StudentController.findStudentList.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:44:16.953] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method findStudentList was student-controller
+[2020-01-15 14:44:16.953] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method findStudentList was student-controller
+[2020-01-15 14:44:16.954] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.lang.Object(true)
+[2020-01-15 14:44:16.955] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache models with key java.lang.Object(true)
+[2020-01-15 14:44:16.955] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.lang.Object(true)
+[2020-01-15 14:44:16.955] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache modelDependencies with key java.lang.Object(true)
+[2020-01-15 14:44:16.955] INFO  [main] [springfox.documentation.spring.web.OperationsKeyGenerator - 51]: Cache key generated: /user.com.yun.demo.controller.sayController.add.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:44:16.955] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache operations with key /user.com.yun.demo.controller.sayController.add.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:44:16.958] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method add was 用户模块
+[2020-01-15 14:44:16.959] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method add was 用户模块
+[2020-01-15 14:44:16.961] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: com.yun.demo.bean.User(true)
+[2020-01-15 14:44:16.961] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache models with key com.yun.demo.bean.User(true)
+[2020-01-15 14:44:16.962] INFO  [main] [springfox.documentation.schema.property.ModelPropertiesKeyGenerator - 48]: Cache key generated: com.yun.demo.bean.User(true)
+[2020-01-15 14:44:16.962] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache modelProperties with key com.yun.demo.bean.User(true)
+[2020-01-15 14:44:16.963] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: com.yun.demo.bean.User(true)
+[2020-01-15 14:44:16.964] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache modelDependencies with key com.yun.demo.bean.User(true)
+[2020-01-15 14:44:16.964] INFO  [main] [springfox.documentation.schema.property.ModelPropertiesKeyGenerator - 48]: Cache key generated: com.yun.demo.bean.User(true)
+[2020-01-15 14:44:16.964] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache modelProperties with key com.yun.demo.bean.User(true)
+[2020-01-15 14:44:16.964] INFO  [main] [springfox.documentation.spring.web.OperationsKeyGenerator - 51]: Cache key generated: /user/{id}.com.yun.demo.controller.sayController.getUserById.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:44:16.964] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache operations with key /user/{id}.com.yun.demo.controller.sayController.getUserById.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:44:16.966] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method getUserById was 用户模块
+[2020-01-15 14:44:16.967] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method getUserById was 用户模块
+[2020-01-15 14:44:16.967] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.lang.Object(true)
+[2020-01-15 14:44:16.967] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache models with key java.lang.Object(true)
+[2020-01-15 14:44:16.968] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.lang.Object(true)
+[2020-01-15 14:44:16.968] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache modelDependencies with key java.lang.Object(true)
+[2020-01-15 14:44:16.968] INFO  [main] [springfox.documentation.spring.web.OperationsKeyGenerator - 51]: Cache key generated: /users.com.yun.demo.controller.sayController.users.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:44:16.968] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache operations with key /users.com.yun.demo.controller.sayController.users.DefaultGenericTypeNamingStrategy
+[2020-01-15 14:44:16.968] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method users was 用户模块
+[2020-01-15 14:44:16.969] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method users was 用户模块
+[2020-01-15 14:44:16.994] INFO  [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 202]: Tomcat started on port(s): 9002 (http) with context path ''
+[2020-01-15 14:44:16.997] INFO  [main] [com.yun.demo.DemoApplication - 59]: Started DemoApplication in 3.334 seconds (JVM running for 4.707)
+[2020-01-15 14:44:24.180] INFO  [http-nio-9002-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - 173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-01-15 14:44:24.180] INFO  [http-nio-9002-exec-1] [org.springframework.web.servlet.DispatcherServlet - 524]: Initializing Servlet 'dispatcherServlet'
+[2020-01-15 14:44:24.185] INFO  [http-nio-9002-exec-1] [org.springframework.web.servlet.DispatcherServlet - 546]: Completed initialization in 5 ms
+[2020-01-15 14:44:24.197] INFO  [http-nio-9002-exec-1] [com.yun.demo.controller.StudentController - 32]: user log user findStudentList.
+[2020-01-15 19:14:17.136] INFO  [main] [com.yun.demo.DemoApplication - 50]: Starting DemoApplication on DESKTOP-H1ACH2O with PID 4468 (D:\workplace\idea_workplace\springboot_swagger\target\classes started by Lenovo in D:\workplace\idea_workplace\springboot_swagger)
+[2020-01-15 19:14:17.138] INFO  [main] [com.yun.demo.DemoApplication - 651]: The following profiles are active: dev
+[2020-01-15 19:14:17.708] WARN  [main] [org.mybatis.spring.mapper.ClassPathMapperScanner - 64]: No MyBatis mapper was found in '[com.yun.demo.*.mapper]' package. Please check your configuration.
+[2020-01-15 19:14:18.041] INFO  [main] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - 330]: Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c30d03b8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-01-15 19:14:18.187] INFO  [main] [org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - 330]: Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$428d50ea] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[2020-01-15 19:14:18.457] INFO  [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 90]: Tomcat initialized with port(s): 9002 (http)
+[2020-01-15 19:14:18.469] INFO  [main] [org.apache.coyote.http11.Http11NioProtocol - 173]: Initializing ProtocolHandler ["http-nio-9002"]
+[2020-01-15 19:14:18.475] INFO  [main] [org.apache.catalina.core.StandardService - 173]: Starting service [Tomcat]
+[2020-01-15 19:14:18.475] INFO  [main] [org.apache.catalina.core.StandardEngine - 173]: Starting Servlet engine: [Apache Tomcat/9.0.22]
+[2020-01-15 19:14:18.605] INFO  [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - 173]: Initializing Spring embedded WebApplicationContext
+[2020-01-15 19:14:18.605] INFO  [main] [org.springframework.web.context.ContextLoader - 284]: Root WebApplicationContext: initialization completed in 1441 ms
+[2020-01-15 19:14:18.660] INFO  [main] [com.yun.demo.config.MybatisPlusConfig - 30]: dialect: mysql
+[2020-01-15 19:14:18.724] INFO  [main] [com.zaxxer.hikari.HikariDataSource - 110]: HikariPool-1 - Starting...
+[2020-01-15 19:14:18.725] WARN  [main] [com.zaxxer.hikari.util.DriverDataSource - 68]: Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+[2020-01-15 19:14:19.705] INFO  [main] [com.zaxxer.hikari.HikariDataSource - 123]: HikariPool-1 - Start completed.
+[2020-01-15 19:14:20.292] INFO  [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - 80]: Context refreshed
+[2020-01-15 19:14:20.301] INFO  [main] [springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - 83]: Found {0} custom documentation plugin(s)
+[2020-01-15 19:14:20.306] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 53]: Scanning for api listing references
+[2020-01-15 19:14:20.309] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 19:14:20.310] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 72]: Request mapping: error belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0, controller=org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController}]] 
+[2020-01-15 19:14:20.310] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 19:14:20.311] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 72]: Request mapping: errorHtml belongs to groups: [[ResourceGroup{groupName='basic-error-controller', position=0, controller=org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController}]] 
+[2020-01-15 19:14:20.311] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method findStudentList was student-controller
+[2020-01-15 19:14:20.311] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 72]: Request mapping: findStudentList belongs to groups: [[ResourceGroup{groupName='student-controller', position=0, controller=com.yun.demo.controller.StudentController}]] 
+[2020-01-15 19:14:20.312] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method getUserById was 用户模块
+[2020-01-15 19:14:20.312] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 72]: Request mapping: getUserById belongs to groups: [[ResourceGroup{groupName='用户模块', position=0, controller=com.yun.demo.controller.sayController}]] 
+[2020-01-15 19:14:20.313] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method add was 用户模块
+[2020-01-15 19:14:20.313] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 72]: Request mapping: add belongs to groups: [[ResourceGroup{groupName='用户模块', position=0, controller=com.yun.demo.controller.sayController}]] 
+[2020-01-15 19:14:20.313] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method users was 用户模块
+[2020-01-15 19:14:20.313] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 72]: Request mapping: users belongs to groups: [[ResourceGroup{groupName='用户模块', position=0, controller=com.yun.demo.controller.sayController}]] 
+[2020-01-15 19:14:20.315] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 84]: Created resource listing Path: /default/用户模块 Description: 用户模块 Position: 0
+[2020-01-15 19:14:20.316] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 84]: Created resource listing Path: /default/student-controller Description: student-controller Position: 0
+[2020-01-15 19:14:20.316] INFO  [main] [springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - 84]: Created resource listing Path: /default/basic-error-controller Description: basic-error-controller Position: 0
+[2020-01-15 19:14:20.328] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+[2020-01-15 19:14:20.329] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache models with key java.util.Map<java.lang.String,java.lang.Object>(true)
+[2020-01-15 19:14:20.332] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.util.Map<java.lang.String,java.lang.Object>(true)
+[2020-01-15 19:14:20.333] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache modelDependencies with key java.util.Map<java.lang.String,java.lang.Object>(true)
+[2020-01-15 19:14:20.335] INFO  [main] [springfox.documentation.spring.web.OperationsKeyGenerator - 51]: Cache key generated: /error.org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error.DefaultGenericTypeNamingStrategy
+[2020-01-15 19:14:20.336] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache operations with key /error.org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error.DefaultGenericTypeNamingStrategy
+[2020-01-15 19:14:20.342] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 19:14:20.344] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 19:14:20.345] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 19:14:20.346] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 19:14:20.347] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 19:14:20.347] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 19:14:20.348] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 19:14:20.348] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 19:14:20.349] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 19:14:20.350] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 19:14:20.350] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 19:14:20.351] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 19:14:20.352] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 19:14:20.352] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 19:14:20.353] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 19:14:20.353] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method error was basic-error-controller
+[2020-01-15 19:14:20.356] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 19:14:20.356] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache models with key org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 19:14:20.356] INFO  [main] [springfox.documentation.schema.property.ModelPropertiesKeyGenerator - 48]: Cache key generated: org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 19:14:20.357] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 19:14:20.384] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 19:14:20.385] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache modelDependencies with key org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 19:14:20.385] INFO  [main] [springfox.documentation.schema.property.ModelPropertiesKeyGenerator - 48]: Cache key generated: org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 19:14:20.386] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.ModelAndView(true)
+[2020-01-15 19:14:20.387] INFO  [main] [springfox.documentation.schema.property.ModelPropertiesKeyGenerator - 48]: Cache key generated: org.springframework.web.servlet.View(true)
+[2020-01-15 19:14:20.387] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+[2020-01-15 19:14:20.388] INFO  [main] [springfox.documentation.schema.property.ModelPropertiesKeyGenerator - 48]: Cache key generated: org.springframework.web.servlet.View(true)
+[2020-01-15 19:14:20.388] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache modelProperties with key org.springframework.web.servlet.View(true)
+[2020-01-15 19:14:20.389] INFO  [main] [springfox.documentation.spring.web.OperationsKeyGenerator - 51]: Cache key generated: /error.org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml.DefaultGenericTypeNamingStrategy
+[2020-01-15 19:14:20.389] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache operations with key /error.org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml.DefaultGenericTypeNamingStrategy
+[2020-01-15 19:14:20.390] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 19:14:20.390] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 19:14:20.391] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 19:14:20.391] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 19:14:20.392] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 19:14:20.392] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 19:14:20.393] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 19:14:20.393] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 19:14:20.394] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 19:14:20.394] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 19:14:20.395] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 19:14:20.395] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 19:14:20.396] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 19:14:20.397] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 19:14:20.398] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 19:14:20.398] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method errorHtml was basic-error-controller
+[2020-01-15 19:14:20.407] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.lang.Object(true)
+[2020-01-15 19:14:20.407] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache models with key java.lang.Object(true)
+[2020-01-15 19:14:20.408] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.lang.Object(true)
+[2020-01-15 19:14:20.408] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache modelDependencies with key java.lang.Object(true)
+[2020-01-15 19:14:20.408] INFO  [main] [springfox.documentation.spring.web.OperationsKeyGenerator - 51]: Cache key generated: /student/findStudentList.com.yun.demo.controller.StudentController.findStudentList.DefaultGenericTypeNamingStrategy
+[2020-01-15 19:14:20.408] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache operations with key /student/findStudentList.com.yun.demo.controller.StudentController.findStudentList.DefaultGenericTypeNamingStrategy
+[2020-01-15 19:14:20.408] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method findStudentList was student-controller
+[2020-01-15 19:14:20.409] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method findStudentList was student-controller
+[2020-01-15 19:14:20.410] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.lang.Object(true)
+[2020-01-15 19:14:20.411] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache models with key java.lang.Object(true)
+[2020-01-15 19:14:20.411] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.lang.Object(true)
+[2020-01-15 19:14:20.411] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache modelDependencies with key java.lang.Object(true)
+[2020-01-15 19:14:20.411] INFO  [main] [springfox.documentation.spring.web.OperationsKeyGenerator - 51]: Cache key generated: /user.com.yun.demo.controller.sayController.add.DefaultGenericTypeNamingStrategy
+[2020-01-15 19:14:20.411] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache operations with key /user.com.yun.demo.controller.sayController.add.DefaultGenericTypeNamingStrategy
+[2020-01-15 19:14:20.415] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method add was 用户模块
+[2020-01-15 19:14:20.416] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method add was 用户模块
+[2020-01-15 19:14:20.418] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: com.yun.demo.bean.User(true)
+[2020-01-15 19:14:20.418] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache models with key com.yun.demo.bean.User(true)
+[2020-01-15 19:14:20.419] INFO  [main] [springfox.documentation.schema.property.ModelPropertiesKeyGenerator - 48]: Cache key generated: com.yun.demo.bean.User(true)
+[2020-01-15 19:14:20.419] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache modelProperties with key com.yun.demo.bean.User(true)
+[2020-01-15 19:14:20.419] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: com.yun.demo.bean.User(true)
+[2020-01-15 19:14:20.420] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache modelDependencies with key com.yun.demo.bean.User(true)
+[2020-01-15 19:14:20.420] INFO  [main] [springfox.documentation.schema.property.ModelPropertiesKeyGenerator - 48]: Cache key generated: com.yun.demo.bean.User(true)
+[2020-01-15 19:14:20.420] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache modelProperties with key com.yun.demo.bean.User(true)
+[2020-01-15 19:14:20.420] INFO  [main] [springfox.documentation.spring.web.OperationsKeyGenerator - 51]: Cache key generated: /user/{id}.com.yun.demo.controller.sayController.getUserById.DefaultGenericTypeNamingStrategy
+[2020-01-15 19:14:20.420] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache operations with key /user/{id}.com.yun.demo.controller.sayController.getUserById.DefaultGenericTypeNamingStrategy
+[2020-01-15 19:14:20.422] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method getUserById was 用户模块
+[2020-01-15 19:14:20.422] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method getUserById was 用户模块
+[2020-01-15 19:14:20.423] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.lang.Object(true)
+[2020-01-15 19:14:20.423] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache models with key java.lang.Object(true)
+[2020-01-15 19:14:20.423] INFO  [main] [springfox.documentation.schema.ModelContextKeyGenerator - 46]: Cache Key Generated: java.lang.Object(true)
+[2020-01-15 19:14:20.424] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 79]: Caching aspect applied for cache modelDependencies with key java.lang.Object(true)
+[2020-01-15 19:14:20.424] INFO  [main] [springfox.documentation.spring.web.OperationsKeyGenerator - 51]: Cache key generated: /users.com.yun.demo.controller.sayController.users.DefaultGenericTypeNamingStrategy
+[2020-01-15 19:14:20.424] INFO  [main] [springfox.documentation.spring.web.caching.CachingAspect - 68]: Caching aspect applied for cache operations with key /users.com.yun.demo.controller.sayController.users.DefaultGenericTypeNamingStrategy
+[2020-01-15 19:14:20.424] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method users was 用户模块
+[2020-01-15 19:14:20.425] INFO  [main] [springfox.documentation.swagger.web.ClassOrApiAnnotationResourceGrouping - 100]: Group for method users was 用户模块
+[2020-01-15 19:14:20.433] INFO  [main] [org.apache.coyote.http11.Http11NioProtocol - 173]: Starting ProtocolHandler ["http-nio-9002"]
+[2020-01-15 19:14:20.450] INFO  [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer - 202]: Tomcat started on port(s): 9002 (http) with context path ''
+[2020-01-15 19:14:20.452] INFO  [main] [com.yun.demo.DemoApplication - 59]: Started DemoApplication in 3.711 seconds (JVM running for 4.856)
+[2020-01-15 19:14:52.562] INFO  [http-nio-9002-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - 173]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2020-01-15 19:14:52.562] INFO  [http-nio-9002-exec-1] [org.springframework.web.servlet.DispatcherServlet - 524]: Initializing Servlet 'dispatcherServlet'
+[2020-01-15 19:14:52.568] INFO  [http-nio-9002-exec-1] [org.springframework.web.servlet.DispatcherServlet - 546]: Completed initialization in 6 ms
+[2020-01-15 19:14:57.684] INFO  [http-nio-9002-exec-2] [com.yun.demo.controller.StudentController - 32]: user log user findStudentList.
