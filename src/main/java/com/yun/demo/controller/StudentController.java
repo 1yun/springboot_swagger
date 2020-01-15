@@ -2,16 +2,26 @@ package com.yun.demo.controller;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.sun.deploy.net.HttpResponse;
 import com.yun.demo.Service.StudentService;
 import com.yun.demo.bean.Student;
-import lombok.extern.slf4j.Slf4j;
+import com.yun.demo.bean.User;
+import com.yun.demo.utils.DownloadUtils;
+import com.yun.demo.utils.ExcelImportUtil;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
-import javax.annotation.Resource;
+
+import javax.servlet.http.HttpServletResponse;
+import java.io.ByteArrayOutputStream;
+import java.io.FileInputStream;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -23,8 +33,63 @@ public class StudentController {
 
     private static final Logger LOG = LoggerFactory.getLogger(StudentController.class);
 
-    @Resource
+    @Autowired
     private StudentService studentService;
+
+
+    @GetMapping("/export")
+    public void export(HttpServletResponse response)throws Exception{
+        List<Student> list = studentService.list();
+
+        //2.加载模板
+      Resource resource = new ClassPathResource("excel-template/demo.xlsx");
+        FileInputStream fis = new FileInputStream(resource.getFile());
+        //3.根据模板创建工作簿
+        Workbook wb = new XSSFWorkbook(fis);
+        //4.读取工作表
+        Sheet sheet = wb.getSheetAt(0);
+        //5.抽取公共样式
+        Row row = sheet.getRow(2);
+        CellStyle styles [] = new CellStyle[row.getLastCellNum()];
+        for(int i=0;i<row.getLastCellNum();i++) {
+            Cell cell = row.getCell(i);
+            styles[i] = cell.getCellStyle();
+        }
+        //6 构造单元格
+        int rowIndex=2;
+        Cell cell=null;
+        for(Student s:list){
+            System.out.println(s.toString());
+            row=sheet.createRow(rowIndex++);
+
+            cell=row.createCell(0);
+            cell.setCellValue(s.getId());
+            cell.setCellStyle(styles[0]);
+
+            cell=row.createCell(1);
+            cell.setCellValue(s.getIntroduceId());
+            cell.setCellStyle(styles[1]);
+
+            cell=row.createCell(2);
+            cell.setCellValue(s.getName());
+            cell.setCellStyle(styles[2]);
+        }
+        //3.完成下载
+        ByteArrayOutputStream os = new ByteArrayOutputStream();
+        wb.write(os);
+        new DownloadUtils().download(os,response,"2.xlsx");
+
+    }
+
+    @PostMapping("/importUser")
+    public void importUser(@RequestParam(name="file") MultipartFile file)throws Exception{
+        List<Student> list = new ExcelImportUtil(Student.class).readExcel(file.getInputStream(), 2, 1);
+        System.out.println(list.get(0).toString());
+        System.out.println("正常----------------------");
+    }
+
+
+
 
     @GetMapping("/findStudentList")
     public Map<String,Object> findStudentList(){
@@ -39,6 +104,9 @@ public class StudentController {
         map.put("1",students);
         return map;
     }
+
+
+
 
     public List<Student> getChildrenByPid(int pid){
         QueryWrapper<Student> queryWrapper=new QueryWrapper<>();
