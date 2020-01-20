@@ -8,6 +8,10 @@ import com.yun.demo.bean.Student;
 import com.yun.demo.bean.User;
 import com.yun.demo.utils.DownloadUtils;
 import com.yun.demo.utils.ExcelImportUtil;
+import org.apache.poi.hssf.usermodel.HSSFCell;
+import org.apache.poi.hssf.usermodel.HSSFRow;
+import org.apache.poi.hssf.usermodel.HSSFSheet;
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.slf4j.Logger;
@@ -19,9 +23,14 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -37,8 +46,8 @@ public class StudentController {
     private StudentService studentService;
 
 
-    @GetMapping("/export")
-    public void export(HttpServletResponse response)throws Exception{
+    @RequestMapping(value="/admin/export",method=RequestMethod.GET)
+    public void export(HttpServletResponse response, HttpServletRequest request)throws Exception{
         List<Student> list = studentService.list();
 
         //2.加载模板
@@ -73,11 +82,12 @@ public class StudentController {
             cell=row.createCell(2);
             cell.setCellValue(s.getName());
             cell.setCellStyle(styles[2]);
+
         }
         //3.完成下载
         ByteArrayOutputStream os = new ByteArrayOutputStream();
         wb.write(os);
-        new DownloadUtils().download(os,response,"2.xlsx");
+        new DownloadUtils().download(os,response,"我的第二个.xlsx");
 
     }
 

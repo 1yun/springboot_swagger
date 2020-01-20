@@ -22,7 +22,7 @@ mybatis-plus:
 
 
 logging:
-  file: "logs/wsc-admin-api.log"
+  #file: "logs/wsc-admin-api.log"
   pattern:
     console: "[%d{yyyy-MM-dd HH:mm:ss.SSS}] %-5level [%t] [%logger - %line]: %m%n"
     file: "[%d{yyyy-MM-dd HH:mm:ss.SSS}] %-5level [%t] [%logger - %line]: %m%n"
