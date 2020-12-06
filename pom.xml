@@ -90,6 +90,12 @@
             <artifactId>poi-ooxml-schemas</artifactId>
             <version>4.0.1</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-activemq</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>
