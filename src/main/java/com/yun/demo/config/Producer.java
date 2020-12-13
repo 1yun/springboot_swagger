@@ -4,6 +4,7 @@ import org.apache.activemq.ScheduledMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.jms.core.JmsMessagingTemplate;
+import org.springframework.jms.core.JmsTemplate;
 import org.springframework.stereotype.Component;
 
 import javax.jms.*;
@@ -24,6 +25,9 @@ public class Producer {
     @Qualifier("delayQueue")
     private Queue delayQueue;
 
+    @Autowired
+    private Topic topic;
+
     //@Scheduled(fixedRateString = "3000")  //每3秒发送一次消息
     public void send() {
         ConnectionFactory connectionFactory = jmsMessagingTemplate.getConnectionFactory();
@@ -38,7 +42,11 @@ public class Producer {
             String msg = (UUID.randomUUID() + "").substring(0, 6);
             Destination destin = session.createQueue("myqueue");
             producer = session.createProducer(destin);
-            //producer.setDeliveryMode(DeliveryMode.PERSISTENT);
+            producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
+            /**
+             * queue发送模式 持久化:当服务器重启后 消息不会丢失 DeliveryMode.PERSISTENT
+             *          非持久化: 服务器重启后 消息丢失 DeliveryMode.NON_PERSISTENT
+             */
             TextMessage textMessage = session.createTextMessage(msg);
             textMessage.setJMSMessageID(UUID.randomUUID().toString()); //多台机器可以用雪花算法
             String jmsMessageID = textMessage.getJMSMessageID();
@@ -87,4 +95,25 @@ public class Producer {
         System.out.println("-------延时队列发消息完成----" + msg);
 
     }
+
+
+    public void sendTopic() {
+        String msg = (UUID.randomUUID() + "").substring(0, 6);
+
+        JmsTemplate jmsTemplate = jmsMessagingTemplate.getJmsTemplate();
+        jmsTemplate.setDeliveryMode(DeliveryMode.PERSISTENT);
+        jmsMessagingTemplate.setJmsTemplate(jmsTemplate);
+        /**
+         * topic :设置消息持久化   默认是持久化的消息（持久化订阅和持久化消息）
+         *  持久化订阅后 发送持久化消息
+         *        即使服务器重启后 消费者上线依旧能收到之前未收到的消息
+         */
+
+        jmsMessagingTemplate.convertAndSend(topic, msg);
+        System.out.println("topic发送消息" + msg);
+    }
+
+    /**
+
+     */
 }

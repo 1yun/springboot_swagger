@@ -34,7 +34,7 @@ public class ActiveMQConfig {
         //手动签收
         factory.setSessionAcknowledgeMode(Session.CLIENT_ACKNOWLEDGE);
         //设置并发数
-        factory.setConcurrency("5"); //工厂创建并发的消费者（最大并发量为5）
+        //factory.setConcurrency("5"); //工厂创建并发的消费者（最大并发量为5）
         return factory;
     }
 
@@ -45,9 +45,18 @@ public class ActiveMQConfig {
         factory.setConnectionFactory(activeMQConnectionFactory);
         factory.setPubSubDomain(true); //设置为true 表示为topic (发布订阅)
         //设置事务
-        factory.setSessionTransacted(false);
+        factory.setSessionTransacted(true);
+        //开启持久化订阅
+        factory.setSubscriptionDurable(true);
+        /**
+         * 非持久化订阅  只有在线才可以接受消息
+         * 持久化订阅  订阅后需要发一次消息生效
+         *              在线可以接受消息
+         *              不在线的话 等待再次上线 可以收到之前未收到的消息 -- 但是消息必须是持久化的
+         */
         //手动签收
-        factory.setSessionAcknowledgeMode(Session.CLIENT_ACKNOWLEDGE);
+        factory.setClientId("id2");
+        factory.setSessionAcknowledgeMode(Session.AUTO_ACKNOWLEDGE);
         return factory;
     }
 }

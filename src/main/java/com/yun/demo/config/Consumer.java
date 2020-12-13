@@ -12,13 +12,13 @@ import javax.jms.TextMessage;
 public class Consumer {
 
 
-//    @JmsListener(destination = "myqueue", containerFactory = "jmsQueueListener")
-//    public void listenQueue(ActiveMQMessage message, Session session) throws JMSException {
-//        System.out.println("listenQueue监听到myqueue的消息" + message);
-//        //session.recover();
-//        System.out.println("----------------------------");
-//
-//    }
+    @JmsListener(destination = "myqueue", containerFactory = "jmsQueueListener")
+    public void listenQueue(ActiveMQMessage message, Session session) throws JMSException {
+        System.out.println("listenQueue监听到myqueue的消息" + message);
+        //session.recover();
+        System.out.println("----------------------------");
+
+    }
 
     @JmsListener(destination = "myqueue", containerFactory = "jmsQueueListener")
     public void listenQueue1(ActiveMQMessage message, Session session) throws JMSException {
@@ -35,4 +35,14 @@ public class Consumer {
     public void listenDelayQueue(ActiveMQMessage message, Session session) {
         System.out.println("监听到my-delay-queue的消息" + message);
     }
+
+    @JmsListener(destination = "my-topic",containerFactory = "jmsTopicListener")
+    public void listenTopic(ActiveMQMessage message, Session session) throws JMSException {
+        try{
+            System.out.println("监听到my-topic的消息"+message);
+        }catch (Exception e){
+            session.rollback();
+        }
+    }
+
 }
